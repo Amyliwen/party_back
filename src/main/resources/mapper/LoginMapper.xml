@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.party.example.dao.LoginDao">
+
+    <select id="getUser" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+            u.id       userId,
+            u.username username,
+            u.password password,
+            u.chinese_name chineseName
+        FROM
+            t_user u
+        WHERE u.username = #{username}
+          AND u.password = #{password}
+          AND u.delete_status = '1'
+    </select>
+
+</mapper>

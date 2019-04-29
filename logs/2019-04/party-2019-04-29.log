@@ -1,0 +1,69 @@
+2019-04-29 14:40:31.270 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on jimmy with PID 8480 (C:\Users\jimmy\IdeaProjects\Party\target\classes started by jimmy in C:\Users\jimmy\IdeaProjects\Party)
+2019-04-29 14:40:31.283 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-04-29 14:40:35.467 INFO  --- [HikariDataSource.java:110][restartedMain] - HikariPool-1 - Starting...
+2019-04-29 14:40:35.698 INFO  --- [HikariDataSource.java:123][restartedMain] - HikariPool-1 - Start completed.
+2019-04-29 14:40:35.838 INFO  --- [LogHelper.java:31][restartedMain] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-29 14:40:36.040 INFO  --- [Version.java:46][restartedMain] - HHH000412: Hibernate Core {5.3.7.Final}
+2019-04-29 14:40:36.042 INFO  --- [Environment.java:213][restartedMain] - HHH000206: hibernate.properties not found
+2019-04-29 14:40:36.417 INFO  --- [JavaReflectionManager.java:49][restartedMain] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-29 14:40:36.780 INFO  --- [Dialect.java:157][restartedMain] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-29 14:40:38.341 WARN  --- [JpaBaseConfiguration.java:234][restartedMain] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-29 14:40:38.721 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 8.141 seconds (JVM running for 10.234)
+2019-04-29 16:13:26.755 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on jimmy with PID 3740 (C:\Users\jimmy\IdeaProjects\Party\target\classes started by jimmy in C:\Users\jimmy\IdeaProjects\Party)
+2019-04-29 16:13:26.759 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-04-29 16:13:28.982 INFO  --- [HikariDataSource.java:110][restartedMain] - HikariPool-1 - Starting...
+2019-04-29 16:13:29.071 INFO  --- [HikariDataSource.java:123][restartedMain] - HikariPool-1 - Start completed.
+2019-04-29 16:13:29.125 INFO  --- [LogHelper.java:31][restartedMain] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-29 16:13:29.183 INFO  --- [Version.java:46][restartedMain] - HHH000412: Hibernate Core {5.3.7.Final}
+2019-04-29 16:13:29.186 INFO  --- [Environment.java:213][restartedMain] - HHH000206: hibernate.properties not found
+2019-04-29 16:13:29.327 INFO  --- [JavaReflectionManager.java:49][restartedMain] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-29 16:13:29.495 INFO  --- [Dialect.java:157][restartedMain] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-29 16:13:30.551 WARN  --- [JpaBaseConfiguration.java:234][restartedMain] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-29 16:13:30.899 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 4.51 seconds (JVM running for 5.502)
+2019-04-29 16:15:19.440 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-6] - ==>  Preparing: SELECT u.id userId, u.username username, u.password password, u.chinese_name chineseName FROM t_user u WHERE u.username = ? AND u.password = ? AND u.delete_status = '1' 
+2019-04-29 16:15:19.488 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-6] - ==> Parameters: jichang(String), 123456(String)
+2019-04-29 16:15:19.509 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-6] - <==      Total: 1
+2019-04-29 16:15:19.608 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - ==>  Preparing: SELECT u.id userId, u.chinese_name chineseName, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM t_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-04-29 16:15:19.609 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - ==> Parameters: jichang(String)
+2019-04-29 16:15:19.613 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - <==      Total: 1
+2019-04-29 16:15:19.641 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-04-29 16:15:19.641 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - ==> Parameters: 
+2019-04-29 16:15:19.645 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - <==      Total: 10
+2019-04-29 16:15:19.648 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-04-29 16:15:19.649 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - ==> Parameters: 
+2019-04-29 16:15:19.655 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-7] - <==      Total: 10
+2019-04-29 16:15:25.384 INFO  --- [UserRealm.java:36][http-nio-8080-exec-8] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:25.385 INFO  --- [UserRealm.java:37][http-nio-8080-exec-8] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:25.388 INFO  --- [UserRealm.java:36][http-nio-8080-exec-8] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:25.389 INFO  --- [UserRealm.java:37][http-nio-8080-exec-8] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:25.395 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-8] - ==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-04-29 16:15:25.395 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-8] - ==> Parameters: 
+2019-04-29 16:15:25.397 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-8] - <==      Total: 1
+2019-04-29 16:15:25.398 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-8] - ==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-04-29 16:15:25.398 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-8] - ==> Parameters: 0(Integer), 50(Integer)
+2019-04-29 16:15:25.400 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-8] - <==      Total: 5
+2019-04-29 16:15:29.534 INFO  --- [UserRealm.java:36][http-nio-8080-exec-9] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:29.535 INFO  --- [UserRealm.java:36][http-nio-8080-exec-10] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:29.535 INFO  --- [UserRealm.java:37][http-nio-8080-exec-9] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:29.535 INFO  --- [UserRealm.java:37][http-nio-8080-exec-10] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:29.535 INFO  --- [UserRealm.java:36][http-nio-8080-exec-10] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:29.536 INFO  --- [UserRealm.java:37][http-nio-8080-exec-10] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:29.539 INFO  --- [UserRealm.java:36][http-nio-8080-exec-10] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:29.539 INFO  --- [UserRealm.java:36][http-nio-8080-exec-9] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:29.539 INFO  --- [UserRealm.java:37][http-nio-8080-exec-10] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:29.539 INFO  --- [UserRealm.java:37][http-nio-8080-exec-9] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:29.539 INFO  --- [UserRealm.java:36][http-nio-8080-exec-10] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"chineseName":"畅大哥","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":5}
+2019-04-29 16:15:29.540 INFO  --- [UserRealm.java:37][http-nio-8080-exec-10] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-04-29 16:15:29.546 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-9] - ==>  Preparing: SELECT count(0) FROM t_user u WHERE u.delete_status = '1' 
+2019-04-29 16:15:29.547 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-9] - ==> Parameters: 
+2019-04-29 16:15:29.548 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-9] - <==      Total: 1
+2019-04-29 16:15:29.549 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-9] - ==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, chinese_name chineseName, role_id roleId, login_count loginCount, photoURL photoURL, loginIP loginIP, email email, delete_status deleteStatus, DATE_FORMAT(last_time, '%Y.%m.%d %T') lastTime, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM t_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-04-29 16:15:29.549 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-9] - ==> Parameters: 0(Integer), 50(Integer)
+2019-04-29 16:15:29.555 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-10] - ==>  Preparing: SELECT id roleId, role_name roleName FROM sys_role WHERE delete_status='1' 
+2019-04-29 16:15:29.555 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-10] - ==> Parameters: 
+2019-04-29 16:15:29.559 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-9] - <==      Total: 24
+2019-04-29 16:15:29.579 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-10] - <==      Total: 3
