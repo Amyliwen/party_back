@@ -3,5 +3,9 @@ spring:
       url: jdbc:mysql://192.168.66.233:3306/example?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
       username: root
       password: 123
+  jpa:
+    show-sql: true
 mybatis:
    mapperLocations: classpath:/mapper/*.xml
+server:
+  port: 8081

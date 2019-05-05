@@ -43,7 +43,7 @@ public class LoginServiceImpl implements LoginService {
 		} catch (AuthenticationException e) {
 			info.put("result", "fail");
 		}
-		return CommonUtil.successJson(info);
+		return CommonUtil.successJson(info);//提交“账号密码”表单，返回json给前端
 	}
 
 	/**

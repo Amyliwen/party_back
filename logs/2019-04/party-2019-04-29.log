@@ -67,3 +67,30 @@
 2019-04-29 16:15:29.555 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-10] - ==> Parameters: 
 2019-04-29 16:15:29.559 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-9] - <==      Total: 24
 2019-04-29 16:15:29.579 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8080-exec-10] - <==      Total: 3
+2019-04-29 16:32:27.214 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on jimmy with PID 9116 (C:\Users\jimmy\IdeaProjects\Party\target\classes started by jimmy in C:\Users\jimmy\IdeaProjects\Party)
+2019-04-29 16:32:27.219 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-04-29 16:32:29.077 INFO  --- [HikariDataSource.java:110][restartedMain] - HikariPool-1 - Starting...
+2019-04-29 16:32:29.154 INFO  --- [HikariDataSource.java:123][restartedMain] - HikariPool-1 - Start completed.
+2019-04-29 16:32:29.204 INFO  --- [LogHelper.java:31][restartedMain] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-29 16:32:29.253 INFO  --- [Version.java:46][restartedMain] - HHH000412: Hibernate Core {5.3.7.Final}
+2019-04-29 16:32:29.255 INFO  --- [Environment.java:213][restartedMain] - HHH000206: hibernate.properties not found
+2019-04-29 16:32:29.360 INFO  --- [JavaReflectionManager.java:49][restartedMain] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-29 16:32:29.484 INFO  --- [Dialect.java:157][restartedMain] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-29 16:32:30.203 WARN  --- [JpaBaseConfiguration.java:234][restartedMain] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-29 16:32:30.505 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 3.647 seconds (JVM running for 4.978)
+2019-04-29 16:44:07.702 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on jimmy with PID 8176 (C:\Users\jimmy\IdeaProjects\Party\target\classes started by jimmy in C:\Users\jimmy\IdeaProjects\Party)
+2019-04-29 16:44:07.706 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-04-29 16:44:09.832 INFO  --- [HikariDataSource.java:110][restartedMain] - HikariPool-1 - Starting...
+2019-04-29 16:44:09.922 INFO  --- [HikariDataSource.java:123][restartedMain] - HikariPool-1 - Start completed.
+2019-04-29 16:44:09.973 INFO  --- [LogHelper.java:31][restartedMain] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-29 16:44:10.023 INFO  --- [Version.java:46][restartedMain] - HHH000412: Hibernate Core {5.3.7.Final}
+2019-04-29 16:44:10.025 INFO  --- [Environment.java:213][restartedMain] - HHH000206: hibernate.properties not found
+2019-04-29 16:44:10.151 INFO  --- [JavaReflectionManager.java:49][restartedMain] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-29 16:44:10.265 INFO  --- [Dialect.java:157][restartedMain] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-29 16:44:11.048 WARN  --- [JpaBaseConfiguration.java:234][restartedMain] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-29 16:44:11.354 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 3.983 seconds (JVM running for 4.736)
+2019-04-29 16:46:41.000 WARN  --- [AbstractHandlerExceptionResolver.java:194][http-nio-8080-exec-5] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
